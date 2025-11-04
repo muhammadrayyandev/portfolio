@@ -5,79 +5,86 @@ import { Menu, X, Download } from "lucide-react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const menuItems = ["about", "skills", "projects", "contact"];
+  const menuItems = [
+    { name: "About Me", href: "#about" },
+    { name: "My Skills", href: "#skills" },
+    { name: "My Projects", href: "#projects" },
+  ];
+  
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 bg-black/90 backdrop-blur-md shadow-md">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6 md:px-12 text-white">
-        {/* Logo */}
+    <header className="w-full fixed top-0 left-0 z-50 bg-transparent">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between py-6 px-8">
         <a
           href="#"
-          className="text-xl md:text-2xl font-bold bg-white text-black px-4 py-2 rounded-full tracking-wide hover:tracking-wider transition-all duration-500"
+          className="text-2xl font-extrabold hover:tracking-wider duration-500 bg-white text-black px-4 py-2 rounded-full font-serif"
         >
           Tayyab Khattak
         </a>
 
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-8 text-sm md:text-base font-semibold uppercase tracking-wide">
-          {menuItems.map((item) => (
-            <li key={item}>
-              <a
-                href={`#${item}`}
-                className="border border-transparent px-5 py-2 rounded-full transition-all duration-300 hover:border-white hover:bg-white hover:text-black"
-              >
-                {item}
-              </a>
-            </li>
-          ))}
-          <li>
-            <a
-              href="/Tayyab-Khattak-CV.pdf"
-              download
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full font-bold hover:bg-gray-200 transition-all duration-300"
-            >
-              <Download size={18} className="text-black" />
-              Resume
-            </a>
-          </li>
-        </ul>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden flex items-center justify-center p-2 rounded-md hover:bg-gray-800 transition"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        {!isOpen && (
+          <button
+            className="flex items-center justify-center text-black p-2 rounded-md hover:bg-white/10 transition"
+            onClick={() => setIsOpen(true)}
+          >
+            <Menu size={42} />
+          </button>
+        )}
       </nav>
 
-      {/* Mobile Dropdown Menu */}
-      {isOpen && (
-        <ul className="absolute top-20 left-1/2 -translate-x-1/2 bg-black text-white rounded-2xl shadow-lg py-5 px-8 flex flex-col items-center gap-4 text-base font-semibold uppercase tracking-wide md:hidden transition-all duration-300 z-40">
-          {menuItems.map((item) => (
-            <li key={item}>
-              <a
-                href={`#${item}`}
-                className="border border-transparent px-5 py-2 rounded-full transition-all duration-300 hover:border-white hover:bg-white hover:text-black"
-                onClick={() => setIsOpen(false)}
-              >
-                {item}
-              </a>
-            </li>
-          ))}
-          <li>
+      <div
+        className={`fixed inset-0 bg-white text-black flex flex-col justify-center items-center gap-8 text-lg font-semibold tracking-wide transition-all duration-500 ease-in-out ${
+          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        <div className="absolute top-6 right-[16%] p-2 max-w-7xl m-auto">
+          <button
+            className=" text-black hover:opacity-70 transition"
+            onClick={() => setIsOpen(false)}
+          >
+            <X size={42} />
+          </button>
+        </div>
+
+        {menuItems.map((item) => (
+          <a
+            key={item.name}
+            href={item.href}
+            className="hover:text-gray-500 transition-all duration-300 font-serif"
+            onClick={() => setIsOpen(false)}
+          >
+            {item.name}
+          </a>
+        ))}
+
+        <div className="mt-10 text-center text-gray-600 text-sm uppercase tracking-wider">
+          <p className="mb-2">Connect</p>
+          <div className="flex flex-col gap-4">
             <a
-              href="/TayyabKhattak_Resume.pdf"
-              target="_blank"
-              className="bg-white text-black px-5 py-2 rounded-full font-bold hover:bg-gray-200 transition-all duration-300"
-              onClick={() => setIsOpen(false)}
+              href="mailto:tayyabktk2002@gmail.com"
+              className="block text-black font-bold hover:text-gray-600"
             >
-              Resume
+              Email: tayyabktk2002@gmail.com
             </a>
-          </li>
-        </ul>
-      )}
+            <a
+              href="https://github.com/tayyabktk2002"
+              target="_blank"
+              className="block text-black font-bold hover:text-gray-600"
+            >
+              Github: tayyabktk2002
+            </a>
+          </div>
+        </div>
+
+        <a
+          href="/Tayyab-Khattak-CV.pdf"
+          download
+          className="flex items-center gap-2 bg-black text-white px-5 py-2 rounded-full font-semibold hover:bg-gray-800 transition-all duration-300 mt-8"
+        >
+          <Download size={18} />
+          Download CV
+        </a>
+      </div>
     </header>
   );
 };
