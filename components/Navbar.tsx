@@ -14,17 +14,17 @@ const Navbar = () => {
 
   return (
     <header className="w-full fixed top-0 left-0 z-50 bg-transparent">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between py-6 px-8">
+      <nav className=" flex items-center justify-between py-6 px-8">
         <a
           href="#"
-          className="text-2xl font-extrabold hover:tracking-wider duration-500 bg-white text-black px-4 py-2 rounded-full font-serif"
+          className="text-2xl font-extrabold hover:tracking-wider duration-500 p-1 bg-white text-black  rounded-full font-serif "
         >
-          Tayyab Khattak
+          <img src="/favicon.PNG" alt="LOGO" className="w-16 h-16"/>
         </a>
 
         {!isOpen && (
           <button
-            className="flex items-center justify-center text-black p-2 rounded-md hover:bg-white/10 transition"
+            className="flex items-center justify-center text-black p-2 rounded-md hover:bg-white/40 transition bg-white"
             onClick={() => setIsOpen(true)}
           >
             <Menu size={42} />
@@ -37,7 +37,7 @@ const Navbar = () => {
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        <div className="absolute top-6 right-[16%] p-2 max-w-7xl m-auto">
+        <div className="absolute top-9 right-8 p-2 max-w-7xl m-auto bg-white">
           <button
             className=" text-black hover:opacity-70 transition"
             onClick={() => setIsOpen(false)}

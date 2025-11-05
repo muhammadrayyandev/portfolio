@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Tayyab Khattak | Full Stack Developer Portfolio",
+  icons: {
+    icon: "/favicon.png", 
+  },
   description:
     "Portfolio of Tayyab Ur Rehman Khattak — Full Stack Developer experienced in React.js, Next.js, Node.js, Express, and MongoDB. Building responsive, user-friendly, and scalable web applications.",
   keywords: [
@@ -24,7 +27,7 @@ export const metadata: Metadata = {
     title: "Tayyab Khattak | Full Stack Developer",
     description:
       "Showcasing projects and skills of Tayyab Khattak — React, Node.js, MongoDB, and Next.js developer.",
-    url: "https://tayyabkhattak.vercel.app", 
+    url: "https://tayyabkhattak.vercel.app",
     siteName: "Tayyab Khattak Portfolio",
     images: [
       {
@@ -46,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
+      <body>
         <Navbar />
         <main> {children}</main>
         {/* <Footer /> */}

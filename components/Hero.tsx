@@ -1,17 +1,16 @@
 "use client";
-import React from "react";
+import { Typewriter } from "react-simple-typewriter";
+import { Download } from "lucide-react";
+import MediaPlatform from "./MediaPlatform";
 
 const Hero = () => {
   return (
     <section className="w-full min-h-screen flex flex-col md:flex-row mt-20 md:mt-0">
-      {/* Right: Image Section (Mobile First) */}
       <div className="relative bg-white w-full md:w-1/2 flex justify-center items-center p-8 sm:p-12 md:p-16 lg:p-20 overflow-hidden order-1 md:order-2">
-        {/* Animated Background Dots */}
         <div className="absolute inset-0">
           <div className="animate-dots opacity-60"></div>
         </div>
 
-        {/* Profile Image */}
         <div className="relative z-10 shadow-2xl shadow-black">
           <div className="relative">
             <img
@@ -24,16 +23,30 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Left: Text Section */}
       <div className="bg-black text-white flex flex-col justify-center items-start w-full md:w-1/2 p-8 sm:p-12 md:p-16 lg:p-20 order-2 md:order-1">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 uppercase font-serif">
-          Full Stack <br /> Developer
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 uppercase font-serif mt-26">
+          I am <br />
+          <span className="text-[#0EA5E9]">
+            <Typewriter
+              words={["Frontend", "Backend", "Full Stack"]}
+              loop={true}
+              cursor
+              cursorStyle="|"
+              typeSpeed={150}
+              deleteSpeed={50}
+              delaySpeed={1200}
+            />
+          </span> <br />
+          Developer
         </h1>
-
-        <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-10 leading-relaxed">
-          I like to craft solid and scalable full-stack web products{" "}
+        <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-10 leading-relaxed text-justify">
+          I like to craft solid and scalable full-stack web products
           <br className="hidden sm:block" />
-          with great user experiences and modern design.
+          with great user experiences and modern design. Passionate about
+          turning ideas into functional, high-performing applications that make
+          an impact. <br />
+          Always exploring new technologies to deliver clean, efficient, and
+          maintainable solutions.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
@@ -45,10 +58,21 @@ const Hero = () => {
           </a>
           <a
             href="#contact"
-            className="border border-white px-6 py-3 rounded-full font-semibold text-center hover:bg-white hover:text-black transition-all duration-300"
+            className="border border-[#0EA5E9] px-6 py-3 rounded-full font-semibold text-center hover:bg-white hover:text-black transition-all duration-300"
           >
             Contact Me
           </a>
+          <a
+            href="/Tayyab-Khattak-CV.pdf"
+            download
+            className="border border-[#0EA5E9] px-6 py-3 rounded-full font-semibold text-center hover:bg-white hover:text-black transition-all duration-300 flex gap-2"
+          >
+            <Download size={18} />
+            <span> Download CV</span>
+          </a>
+        </div>
+        <div className="">
+          <MediaPlatform />
         </div>
       </div>
     </section>
