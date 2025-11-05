@@ -6,8 +6,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "My Skills", href: "#skills" },
     { name: "My Projects", href: "#projects" },
+    { name: "About Me", href: "#about" },
+    { name: "My Skills", href: "#skills" },
   ];
   
 
@@ -18,7 +19,7 @@ const Navbar = () => {
           href="#"
           className="text-2xl font-extrabold hover:tracking-wider duration-500 p-1 bg-white text-black  rounded-full font-serif "
         >
-          <img src="/favicon.PNG" alt="LOGO" className="w-16 h-16"/>
+          <img src="/favicon.png" alt="LOGO" className="w-16 h-16"/>
         </a>
 
         {!isOpen && (
