@@ -6,7 +6,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "About Me", href: "#about" },
     { name: "My Skills", href: "#skills" },
     { name: "My Projects", href: "#projects" },
   ];
