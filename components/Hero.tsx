@@ -13,6 +13,7 @@ const Hero = () => {
 
         <div className="relative z-10 shadow-2xl shadow-black">
           <div className="relative">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/profile.png"
               alt="Tayyab Khattak"

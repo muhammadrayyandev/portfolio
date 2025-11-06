@@ -1,44 +1,99 @@
+"use client";
+import { useState } from "react";
+
 const Projects = () => {
-  const projects = [
+  const [activeTab, setActiveTab] = useState("freelance");
+
+  const teamProjects = [
     {
-      title: "IAP(Industrialists Association Peshawar)",
-      image: "projects/iap.png",
-      hoverImage: "projects/hover/iap.svg",
-      link: "https://www.iapeshawar.com/",
-    },
-    {
-      title: "VANIX",
-      image: "projects/vanix.png",
-      hoverImage: "projects/hover/vanix.png",
-      link: "https://vanix-teal.vercel.app/",
+      title: "NewsHunt",
+      image: "projects/newshunt.png",
+      hoverImage: "projects/hover/newshunt.svg",
+      link: "https://newshunt.io/",
+      company: "Next Generation Circle PVT limited Peshawar, Pakistan",
     },
     {
       title: "AUSC(Admission University, School, College)",
       image: "projects/ausc.png",
       hoverImage: "projects/hover/ausc.svg",
       link: "https://ausc.com.pk/",
+      company: "Next Generation Circle PVT limited Peshawar, Pakistan",
     },
   ];
+
+  const freelanceProjects = [
+    {
+      title: "IAP(Industrialists Association Peshawar)",
+      image: "projects/iap.png",
+      hoverImage: "projects/hover/iap.svg",
+      link: "https://www.iapeshawar.com/",
+      company: "Freelance",
+    },
+    {
+      title: "VANIX",
+      image: "projects/vanix.png",
+      hoverImage: "projects/hover/vanix.png",
+      link: "https://vanix-teal.vercel.app/",
+      company: "Freelance",
+    },
+    {
+      title: "Story Plus",
+      image: "projects/storyplus.png",
+      hoverImage: "projects/hover/story.png",
+      link: "https://story-pulse-omega.vercel.app/",
+      company: "Freelance",
+    },
+  ];
+
+  const currentProjects =
+    activeTab === "freelance" ? freelanceProjects : teamProjects;
 
   return (
     <section className="py-20 px-6 bg-black text-white" id="projects">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 tracking-tight uppercase">
-            Completed <span className="text-[#0EA5E9]">Projects</span>
+          <h2 className="text-3xl font-bold mb-8 tracking-tight uppercase">
+            My <span className="text-[#0EA5E9]">Projects</span>
           </h2>
-          <div className="w-24 h-1 bg-white mx-auto"></div>
+          <div className="w-24 h-1 bg-white mx-auto mb-8"></div>
+
+          {/* Tabs */}
+          <div className="flex justify-center mb-8">
+            <div className="bg-gray-800 p-1 rounded-lg">
+              <button
+                onClick={() => setActiveTab("freelance")}
+                className={`px-6 py-2 rounded-md font-medium transition-colors ${
+                  activeTab === "freelance"
+                    ? "bg-[#0EA5E9] text-white"
+                    : "text-gray-300 hover:text-white"
+                }`}
+              >
+                Freelance
+              </button>
+              <button
+                onClick={() => setActiveTab("team")}
+                className={`px-6 py-2 rounded-md font-medium transition-colors ${
+                  activeTab === "team"
+                    ? "bg-[#0EA5E9] text-white"
+                    : "text-gray-300 hover:text-white"
+                }`}
+              >
+                Team Collaborative
+              </button>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {currentProjects.map((project, index) => (
             <div
               key={index}
               className="group relative bg-white text-black rounded-lg overflow-hidden shadow-2xl hover:shadow-white/10 transition-all duration-500 hover:-translate-y-2"
             >
               <div className="aspect-video bg-gray-100 overflow-hidden relative">
-                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                <div className="w-full h-full bg-linear-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                   <div className="text-gray-500 text-sm font-medium">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={project.image}
                       alt=""
@@ -47,8 +102,8 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Black sliding overlay with hover image */}
                 <div className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out flex items-center justify-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={project.hoverImage}
                     alt={`${project.title} hover`}
@@ -60,6 +115,9 @@ const Projects = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-3 group-hover:text-gray-600 transition-colors">
                   {project.title}
+                </h3>
+                <h3 className="text-sm font-normal mb-3 group-hover:text-gray-600 transition-colors">
+                  {project?.company}
                 </h3>
                 <div className="flex items-center justify-between">
                   <a
