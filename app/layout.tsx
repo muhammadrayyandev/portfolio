@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import AOSInit from "@/components/AOSInit";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://my-portfolio-beige-tau-68.vercel.app/'),
   title: "Tayyab Khattak | Full Stack Developer Portfolio",
   icons: {
     icon: "/favicon.png", 
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     title: "Tayyab Khattak | Full Stack Developer",
     description:
       "Showcasing projects and skills of Tayyab Khattak — React, Node.js, MongoDB, and Next.js developer.",
-    url: "https://tayyabkhattak.vercel.app",
+    url: "https://my-portfolio-beige-tau-68.vercel.app/",
     siteName: "Tayyab Khattak Portfolio",
     images: [
       {
