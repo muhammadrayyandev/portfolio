@@ -30,7 +30,7 @@ const Hero = () => {
           <div className="animate-dots opacity-60"></div>
         </div>
 
-        <div className="relative z-10 w-96 h-96" data-aos="zoom-in">
+        <div className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96" data-aos="zoom-in">
           <style jsx>{`
             .auto-rotate {
               animation: autoSpin 30s linear infinite;
@@ -50,15 +50,18 @@ const Hero = () => {
             {images.map((_, index) => (
               <div 
                 key={index}
-                className="absolute top-1/2 left-1/2 w-40 h-0.5 bg-gray-400 transform -translate-y-1/2 origin-left"
+                className="absolute top-1/2 left-1/2 w-24 sm:w-32 lg:w-40 h-0.5 bg-gray-400 transform -translate-y-1/2 origin-left"
                 style={{ transform: `rotate(${index * 40}deg)` }}
               ></div>
             ))}
             
             {/* Images positioned in circle */}
             {images.map((image, index) => {
-              const angle = index * 40; 
-              const radius = 160; 
+              const angle = index * 40;
+              // Responsive radius: mobile=96px, tablet=128px, desktop=160px
+              const radius = typeof window !== 'undefined' 
+                ? (window.innerWidth < 640 ? 96 : window.innerWidth < 1024 ? 128 : 160)
+                : 160;
               const x = Math.cos((angle - 90) * Math.PI / 180) * radius;
               const y = Math.sin((angle - 90) * Math.PI / 180) * radius;
               
@@ -73,7 +76,7 @@ const Hero = () => {
                   <img
                     src={image}
                     alt={`Tech ${index + 1}`}
-                    className="w-20 h-20 rounded-full object-cover shadow-lg bg-white p-1"
+                    className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full object-cover shadow-lg bg-white p-1"
                   />
                 </div>
               );
