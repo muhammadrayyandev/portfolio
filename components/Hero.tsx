@@ -88,7 +88,7 @@ const Hero = () => {
 
       <div className="bg-black text-white flex flex-col justify-center items-start w-full md:w-1/2 p-8 sm:p-12 md:p-16 lg:p-20 order-2 md:order-1">
         <h1 data-aos="fade-right" className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 uppercase font-serif mt-26">
-          I am <br />
+          I'm Tayyab <br />
           <span className="text-[#0EA5E9]">
             <Typewriter
               words={["Frontend", "Backend", "Full Stack"]}
@@ -100,7 +100,7 @@ const Hero = () => {
               delaySpeed={1200}
             />
           </span> <br />
-          Developer
+         <span className="text-2xl md:text-4xl">Developer</span>
         </h1>
         <p data-aos="fade-up" data-aos-delay="200" className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-10 leading-relaxed text-justify">
           I like to craft solid and scalable full-stack web products
