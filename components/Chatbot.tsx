@@ -9,7 +9,7 @@ declare global {
 
 export default function Chatling() {
   useEffect(() => {
-    window.chtlConfig = { chatbotId: "9544284527" };
+    window.chtlConfig = { chatbotId: "5652668276" };
 
     const script = document.createElement("script");
     script.src = "https://chatling.ai/js/embed.js";
