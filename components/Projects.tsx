@@ -17,7 +17,7 @@ const Projects = () => {
   const teamProjects: UIUXProject[] = [
     {
       title: "NewsHunt | News Aggregator",
-      image: "projects/Newshunt.png",
+      image: "projects/Newshunt-web.png",
       link: "https://www.figma.com/design/0Du72TpJtsGTxcSOUOFdvF/Newshunt--News-Agregator?node-id=13-4475&t=mKHOBsejQAMwMZyv-0",
       company: "A smart news aggregator that brings together trending news from reliable sources into one personalized, easy-to-browse feed.",
     },
