@@ -98,10 +98,9 @@ const About = () => {
               <p className="text-gray-300 text-lg leading-relaxed">
                 I&rsquo;m a{" "}
                 <b className="text-white font-semibold">
-                  Full Stack Developer{" "}
+                  Graphics & UI/UX Designer{" "}
                 </b>
-                passionate about creating digital solutions that make a
-                difference.
+                 with a passion for crafting immersive digital experiences.
               </p>
             </div>
 
@@ -110,14 +109,14 @@ const About = () => {
                 What I Build
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                I focus on creating{" "}
-                <span className="text-white font-semibold">clean UI</span>,
+                I focus on crafting{" "}
+                <span className="text-white font-semibold">clean and intuitive UI</span>,
                 <span className="text-white font-semibold">
-                  scalable backend systems
+                  creating engaging experiences
                 </span>
                 , and{" "}
                 <span className="text-white font-semibold">
-                  smooth user experiences
+                  delivering visually impactful designs
                 </span>
                 .
               </p>
@@ -128,9 +127,9 @@ const About = () => {
               <p className="text-gray-300 text-lg leading-relaxed">
                 I love{" "}
                 <span className="text-white font-semibold">
-                  solving real-world problems with code{" "}
+                  real-world design challenges{" "}
                 </span>
-                and believe in writing clean, maintainable solutions.
+                and believe in creating clean, intuitive, and user-friendly solutions that delight users.
               </p>
             </div>
 
@@ -138,7 +137,7 @@ const About = () => {
               <h3 className="text-2xl font-bold mb-4 text-white">Location</h3>
               <p className="text-gray-300 text-lg leading-relaxed flex items-center">
                 <span className="mr-2">📍</span>
-                <span className="text-white font-semibold">Islamabad, Pakistan</span>
+                <span className="text-white font-semibold">Peshawar, Pakistan</span>
               </p>
             </div>
           </div>
@@ -147,9 +146,7 @@ const About = () => {
         <div className="mt-16 text-center">
           <div data-aos="fade-up" className="bg-white text-black p-8 rounded-2xl max-w-3xl mx-auto">
             <blockquote className="text-xl font-medium italic">
-              &ldquo;I&rsquo;m a Full Stack Developer who focuses on creating
-              clean UI, scalable backend systems, and smooth user experiences. I
-              love solving real-world problems with code.&rdquo;
+              &ldquo;I&rsquo;m a Graphics & UI/UX Designer who focuses on crafting clean, intuitive interfaces, creating engaging user experiences, and delivering visually impactful designs. I love solving real-world problems through thoughtful and user-centered design solutions.&rdquo;
             </blockquote>
           </div>
         </div>

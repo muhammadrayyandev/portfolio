@@ -5,16 +5,16 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-center md:text-left">
             <p className="text-gray-300">
-              © 2024 Design By h💖
-               <span className="text-[#0EA5E9] font-semibold">Tayyab Ur Rehman Khattak</span>.
+              © 2025 Design By 
+               <span className="text-[#0EA5E9] font-semibold"> Muhammad Rayyan Amjad</span>.
             </p>
           </div>
           
           <div className="flex space-x-6">
-            <a href="https://github.com/tayyabktk2002" className="text-gray-400 hover:text-[#0EA5E9] transition-colors">
-              GitHub
+            <a href="https://www.behance.net/muhammadrayyan17" className="text-gray-400 hover:text-[#0EA5E9] transition-colors">
+              Behance
             </a>
-            <a href="https://www.linkedin.com/in/tayyab-khattak/" className="text-gray-400 hover:text-[#0EA5E9] transition-colors">
+            <a href="https://www.linkedin.com/in/rayyan003/" className="text-gray-400 hover:text-[#0EA5E9] transition-colors">
               LinkedIn
             </a>
           </div>

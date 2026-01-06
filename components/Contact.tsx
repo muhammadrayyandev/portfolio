@@ -82,19 +82,19 @@ const Contact = () => {
               <div className="flex items-center space-x-3">
                 <span className="text-2xl">📧</span>
                 <span className="text-white font-semibold">
-                  tayyabktk2002@gmail.com
+                  muhammadrayyandev@gmail.com
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <span className="text-2xl">📱</span>
                 <span className="text-white font-semibold">
-                  +92 349 5336214
+                  +92 329 9725841
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <span className="text-2xl">📍</span>
                 <span className="text-white font-semibold">
-                  Islamabad, Pakistan
+                  Peshawar, Pakistan
                 </span>
               </div>
             </div>
@@ -103,7 +103,7 @@ const Contact = () => {
           <div data-aos="fade-left" className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
             <form
               className="space-y-6"
-              action="https://formspree.io/f/mbjnqvlv"
+              action="https://formspree.io/f/mgoepqeo"
               method="POST"
             >
               <div>

@@ -1,26 +1,27 @@
 import React from 'react'
 
 const WhatDo = () => {
-  const fullStackServices = [
-    'Building responsive website front end using React, Angular and React-native',
-    'Integrate and work with databases, like MongoDB, PostgreSQL and MySql for data storage and retrieval.',
-    'Work collaboratively with cross-functional teams, including frontend developers, backend developers, and designers.',
-    'Creating application backend in Node & Express'
-  ]
+  const uiUxServices = [
+  'Designing intuitive and visually appealing user interfaces for web and mobile applications.',
+  'Creating interactive prototypes and wireframes using Figma, Adobe XD, and other design tools.',
+  'Conducting user research, usability testing, and implementing user-centered design principles.',
+  'Collaborating with developers and stakeholders to deliver functional and scalable design solutions.'
+];
 
-  const backendServices = [
-    'Designing and developing RESTful APIs and GraphQL endpoints',
-    'Database architecture and optimization with MongoDB, PostgreSQL, and MySQL',
-    'Server-side logic implementation using Node.js and Express',
-    'Authentication, authorization, and security best practices'
-  ]
+const graphicsServices = [
+  'Creating high-quality graphics and visuals using Adobe Photoshop, Illustrator, and Canva.',
+  'Designing branding assets including logos, social media posts, and marketing materials.',
+  'Developing visual storytelling and layouts for both digital and print media.',
+  'Ensuring consistency in color, typography, and overall brand identity across all projects.'
+];
 
-  const frontendServices = [
-    'Building modern, responsive UIs with React, Next.js, and TypeScript',
-    'State management using Redux and Context API',
-    'Performance optimization and code splitting techniques',
-    'Cross-browser compatibility and accessibility standards'
-  ]
+const animationAndPrototyping = [
+  'Building interactive prototypes with smooth transitions and animations.',
+  'Adding micro-interactions and motion design to enhance user engagement.',
+  'Using tools like Figma, Adobe XD, and Photopea to visualize user flows and interactions.',
+  'Optimizing prototypes for usability testing and client presentations.'
+];
+
 
   return (
     <section id="whatdo" className=" bg-black relative overflow-hidden pt-10">
@@ -33,14 +34,14 @@ const WhatDo = () => {
         {/* Full Stack Development */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <img src="/whatdo/full.jpg" alt="Full Stack Development" className="w-full rounded-lg" />
+            <img src="/whatdo/ui-ux.jpeg" alt="Full Stack Development" className="w-full rounded-lg" />
           </div>
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
-              Full Stack Development
+              UI/UX Designing
             </h2>
             <div className="space-y-6">
-              {fullStackServices.map((service, index) => (
+              {uiUxServices.map((service, index) => (
                 <div key={index} className="flex gap-3 group">
                   <span className="text-[#0EA5E9] text-xl mt-1 group-hover:scale-125 transition-transform">⚡</span>
                   <p className="text-gray-300 leading-relaxed">{service}</p>
@@ -53,14 +54,14 @@ const WhatDo = () => {
         {/* Backend Development */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="md:order-2">
-            <img src="/whatdo/backend.jpg" alt="Backend Development" className="w-full rounded-lg" />
+            <img src="/whatdo/GraphicsDesiging.webp" alt="Backend Development" className="w-full rounded-lg" />
           </div>
           <div className="md:order-1">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
-              Backend Development
+              Graphics Desiging
             </h2>
             <div className="space-y-6">
-              {backendServices.map((service, index) => (
+              {graphicsServices.map((service, index) => (
                 <div key={index} className="flex gap-3 group">
                   <span className="text-[#0EA5E9] text-xl mt-1 group-hover:scale-125 transition-transform">⚡</span>
                   <p className="text-gray-300 leading-relaxed">{service}</p>
@@ -73,14 +74,14 @@ const WhatDo = () => {
         {/* Frontend Development */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <img src="/whatdo/front.jpg" alt="Frontend Development" className="w-full rounded-lg" />
+            <img src="/whatdo/Animation&Prototyping.webp" alt="Frontend Development" className="w-full rounded-lg" />
           </div>
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
-              Frontend Development
+              Animation & Prototyping
             </h2>
             <div className="space-y-6">
-              {frontendServices.map((service, index) => (
+              {animationAndPrototyping.map((service, index) => (
                 <div key={index} className="flex gap-3 group">
                   <span className="text-[#0EA5E9] text-xl mt-1 group-hover:scale-125 transition-transform">⚡</span>
                   <p className="text-gray-300 leading-relaxed">{service}</p>

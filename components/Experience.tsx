@@ -3,45 +3,30 @@ import React from "react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Full Stack Developer",
-      company: "Freelance",
-      location: "Remote",
-      duration: "2 Years (Current)",
-      type: "Full-time",
+      title: "Graphics & UI-UX Designer",
+      company: "Next Generation Circle, Peshawar",
+      location: "Peshawar",
+      duration: "3+ Years (Current)",
+      type: "Fulltime",
       description:
-        "Designing and developing complete web solutions, including both frontend and backend functionalities.",
+        "Designing and crafting complete digital experiences, combining visually appealing interfaces with intuitive user interactions for impactful UI/UX solutions.",
     },
     {
-      title: "Full Stack Developer",
-      company: "Next Generation Circle Pvt. Ltd.",
+      title: "Graphics & UI-UX Designer",
+      company: "Tritech Solution, Peshawar",
+      location: "Hybrid",
+      duration: "3 months",
+      type: "Hybrid",
+      description:
+        "Worked on specific projects, designing graphics and intuitive UI/UX experiences.Designing and developing complete web solutions, including both frontend and backend functionalities.",
+    },
+    {
+      title: "Graphic Designer",
+      company: "SMEDA-Regional Office-KP",
       location: "Peshawar",
-      duration: "1.5 Years (Current)",
-      type: "Full-time",
-      description: "Developing both frontend and backend solutions",
-    },
-    {
-      title: "Frontend Developer",
-      company: "ExtendsTech",
-      location: "Peshawar",
-      duration: "Previous Role",
-      type: "Full-time",
-      description: "Focused on frontend development and user interfaces",
-    },
-    {
-      title: "Backend Developer Intern",
-      company: "Aivatek",
-      location: "Islamabad",
-      duration: "4 Months",
-      type: "Internship",
-      description: "Backend development and server-side technologies",
-    },
-    {
-      title: "Frontend Developer Intern",
-      company: "Aivatek",
-      location: "Islamabad",
-      duration: "6 Months",
-      type: "Internship",
-      description: "Frontend development and web technologies",
+      duration: "1 year",
+      type: "Remote",
+      description: "Designed graphics and print materials, including brochures, standees, and promotional visuals.",
     },
   ];
 

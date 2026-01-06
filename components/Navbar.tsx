@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "My Projects", href: "#projects" },
+    { name: "My Work", href: "#projects" },
     { name: "About Me", href: "#about" },
     { name: "What i do", href: "#whatdo" },
     { name: "My Skills", href: "#skills" },
@@ -20,9 +20,9 @@ const Navbar = () => {
       <nav className="flex items-center justify-between py-4 px-4 sm:py-6 sm:px-8">
         <a
           href="#"
-          className="text-2xl font-extrabold hover:tracking-wider duration-500 p-1 bg-white text-black rounded-full font-serif"
+          className="text-2xl font-extrabold hover:tracking-wider duration-500 p-1  text-black rounded-full font-serif"
         >
-          <img src="/favicon.png" alt="LOGO" className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16"/>
+          {/* <img src="/my-logo.png" alt="LOGO" className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16"/> */}
         </a>
 
         {!isOpen && (
@@ -67,25 +67,23 @@ const Navbar = () => {
               href="mailto:tayyabktk2002@gmail.com"
               className="block text-black font-bold hover:text-gray-600 break-all"
             >
-              Email: tayyabktk2002@gmail.com
+              Email: muhammadrayyandev@gmail.com
             </a>
             <a
-              href="https://github.com/tayyabktk2002"
-              target="_blank"
               className="block text-black font-bold hover:text-gray-600"
             >
-              Github: tayyabktk2002
+              Whatsapp: +92 329 9725841
             </a>
           </div>
         </div>
 
         <a
-          href="/Tayyab-Khattak-CV.pdf"
+          href="/Muhammad Rayyan Amjad - Graphics & UI_UX Designer - Resume.pdf"
           download
           className="flex items-center gap-2 bg-black text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-full font-semibold hover:bg-gray-800 transition-all duration-300 mt-6 sm:mt-8 text-sm sm:text-base"
         >
           <Download className="w-4 h-4 sm:w-5 sm:h-5" />
-          Download CV
+          Download Resume
         </a>
       </div>
     </header>
