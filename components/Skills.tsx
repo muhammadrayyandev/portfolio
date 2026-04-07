@@ -180,20 +180,20 @@ import React from "react";
 const Skills = () => {
   const skills = [
     // UI/UX Tools
-    { name: "Figma", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png", category: "UI-UX" },
-    { name: "Adobe XD", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/2101px-Adobe_XD_CC_icon.svg.png", category: "UI-UX" },
-    { name: "Wireframing", icon: "https://cdn3d.iconscout.com/3d/premium/thumb/ui-wireframe-3d-icon-png-download-3569929.png", category: "UI-UX" },
-    { name: "Prototyping", icon: "https://cdn.sanity.io/images/599r6htc/regionalized/fdbd861beb399c5646367753bee2e80cff093bec-1108x1108.png?w=540&q=75&fit=max&auto=format&dpr=1.5", category: "UI-UX" },
-    { name: "Animations", icon: "https://cdn-icons-png.flaticon.com/512/4943/4943055.png", category: "UI-UX" },
-    { name: "Typography", icon: "https://cdn3d.iconscout.com/3d/premium/thumb/typography-3d-icon-png-download-5625775.png", category: "UI-UX" },
+    { name: "Figma", icon: "/Figma.svg", category: "UI-UX" },
+    { name: "Adobe XD", icon: "/adobe-xd.png", category: "UI-UX" },
+    { name: "Wireframing", icon: "/wireframe.webp", category: "UI-UX" },
+    { name: "Prototyping", icon: "/prototyping.png", category: "UI-UX" },
+    { name: "Animations", icon: "/animation.png", category: "UI-UX" },
+    { name: "Typography", icon: "/typography.webp", category: "UI-UX" },
 
     // Graphic Design Tools
-    { name: "Photoshop", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1051px-Adobe_Photoshop_CC_icon.svg.png", category: "Graphic Design" },
-    { name: "Illustrator", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2048px-Adobe_Illustrator_CC_icon.svg.png", category: "Graphic Design" },
-    { name: "Photopea", icon: "https://www.photopea.com/promo/icon512.png", category: "Graphic Design" },
-    { name: "Canva", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/canva-icon.png", category: "Graphic Design" },
-    { name: "Branding & Identity", icon: "https://www.pngitem.com/pimgs/m/112-1127743_software-development-clipart-identity-brand-identity-design-png.png", category: "Graphic Design" },
-    { name: "Social Media Design", icon: "https://cdn-icons-png.flaticon.com/512/5692/5692184.png", category: "Graphic Design" },
+    { name: "Photoshop", icon: "/Photoshop.svg", category: "Graphic Design" },
+    { name: "Illustrator", icon: "/Illustrator.svg", category: "Graphic Design" },
+    { name: "Photopea", icon: "/photopea.png", category: "Graphic Design" },
+    { name: "Canva", icon: "/canva-icon.webp", category: "Graphic Design" },
+    { name: "Branding & Identity", icon: "/branding.png", category: "Graphic Design" },
+    { name: "Social Media Design", icon: "/social-media-design.png", category: "Graphic Design" },
   ];
 
   const uiUxSkills = skills.filter(skill => skill.category === "UI-UX");
