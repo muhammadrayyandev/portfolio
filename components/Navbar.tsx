@@ -64,7 +64,7 @@ const Navbar = () => {
           <p className="mb-2">Connect</p>
           <div className="flex flex-col gap-3 sm:gap-4">
             <a
-              href="mailto:tayyabktk2002@gmail.com"
+              href="mailto:muhammadrayyandev@gmail.com"
               className="block text-black font-bold hover:text-gray-600 break-all"
             >
               Email: muhammadrayyandev@gmail.com
