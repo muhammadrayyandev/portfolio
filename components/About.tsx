@@ -137,7 +137,7 @@ const About = () => {
               <h3 className="text-2xl font-bold mb-4 text-white">Location</h3>
               <p className="text-gray-300 text-lg leading-relaxed flex items-center">
                 <span className="mr-2">📍</span>
-                <span className="text-white font-semibold">Peshawar, Pakistan</span>
+                <span className="text-white font-semibold">G-13 Islamabad, Pakistan</span>
               </p>
             </div>
           </div>

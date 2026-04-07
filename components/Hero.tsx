@@ -201,12 +201,12 @@ const Hero = () => {
             Contact Me
           </a>
           <a
-            href="/Muhammad Rayyan Amjad - Graphics & UI_UX Designer - Resume.pdf"
+            href="/M.Rayyan-Resume.pdf"
             download
             className="border border-[#0EA5E9] px-6 py-3 rounded-full font-semibold text-center hover:bg-white hover:text-black transition-all duration-300 flex gap-2 items-center"
           >
             <Download size={18} />
-            <span>Download CV</span>
+            <span>Download Resume</span>
           </a>
         </div>
 

@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
 
         <a
-          href="/Muhammad Rayyan Amjad - Graphics & UI_UX Designer - Resume.pdf"
+          href="/M.Rayyan-Resume.pdf"
           download
           className="flex items-center gap-2 bg-black text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-full font-semibold hover:bg-gray-800 transition-all duration-300 mt-6 sm:mt-8 text-sm sm:text-base"
         >

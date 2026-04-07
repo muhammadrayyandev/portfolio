@@ -94,7 +94,7 @@ const Contact = () => {
               <div className="flex items-center space-x-3">
                 <span className="text-2xl">📍</span>
                 <span className="text-white font-semibold">
-                  Peshawar, Pakistan
+                  G-13 Islamabad, Pakistan
                 </span>
               </div>
             </div>
