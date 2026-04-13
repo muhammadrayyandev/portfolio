@@ -22,10 +22,22 @@ const Projects = () => {
       company: "A smart news aggregator that brings together trending news from reliable sources into one personalized, easy-to-browse feed.",
     },
     {
+      title: "Find-1 | Education Website & Mobile App",
+      image: "projects/Find-1.png",
+      link: "https://www.figma.com/design/Yb4AhabOemNoWtu8ts3m8C/Find-1-Website---Mob-Application?node-id=4014-11361&t=Wig5SLRcJdO6RRxB-0",
+      company: "Find-1 is an education platform that enables users to search, explore, and apply to universities across Saudi Arabia through a streamlined and user-friendly interface.",
+    },
+    {
       title: "NGEN | Next Generation Circle ",
       image: "projects/Ngen.png",
       link: "https://www.figma.com/design/Nv0MVyuZlsTQ8eEjT3MeuH/NGEN-Website?m=auto&t=RNHHLGhlGp29OXc1-6",
       company: "Next Generation Circle is a global IT and digital transformation company providing tailored software solutions for businesses worldwide.",
+    },
+    {
+      title: "RSL | Real Smart Lamousine",
+      image: "projects/RSL-Real Smart Lamousine.png",
+      link: "https://www.figma.com/design/AM3wBkRQqIaUc5RJLERXEi/RSL-Real-Smart-Lamousine?node-id=0-1&p=f&t=ularO3OOFRwp8UMD-0",
+      company: "Designed the UI/UX for Real Smart Limousine, a luxury booking platform for executive travel, airport transfers, and event rides with a modern interface and seamless booking experience.",
     },
     {
       title: "Morse | Arabic Website ",
@@ -46,6 +58,12 @@ const Projects = () => {
       company: "Designed a user-centric mobile app UI for E-Markaz, enhancing e-commerce and social selling through a modern, seamless experience.",
     },
     {
+      title: "Yaari Mobile App",
+      image: "projects/Yaari.png",
+      link: "https://www.figma.com/design/jhLjqxLFrpyWgmV115rpEB/Yaari-Mobile-App?node-id=0-1&p=f&t=OlIykB3YtwcbFjlm-0",
+      company: "Yaari Mobile App, a modern education platform designed to guide youth toward learning, self-growth, and awareness of contemporary society.",
+    },
+    {
       title: "Darewro Mobile App",
       image: "projects/Darewro-app.png",
       link: "https://www.figma.com/design/2MFdjUtr9IaQzCQNL5gFab/Darewro-Mobile-App?m=auto&t=JWCVrpFt8JO3kCsF-6",
@@ -62,7 +80,13 @@ const Projects = () => {
       image: "projects/Miracle.png",
       link: "https://www.figma.com/design/mDruVW3Wh33K3nGirf5gFW/Affirmation-Empire?node-id=1-2693&p=f&t=LQG2SKnlQwxEXFJh-0",
       company: "Affirmation Empire is a motivational mobile app offering daily affirmations, inspiring quotes, goals, and uplifting stories for personal growth.",
-    }
+    },
+    {
+      title: "Hoor Website & Mobile App",
+      image: "projects/Hoor.png",
+      link: "https://www.figma.com/design/H1ltlyMZuPf4BrNaJcGICz/Hoor-Website---MobileApp?node-id=0-1&p=f&t=NkYHFnxavHRilD2j-0",
+      company: "Web-based price comparison platform enabling users to explore products and compare prices across multiple stores through a clean and responsive design.",
+    },
   ];
 
   const freelanceProjects: GraphicProject[] = [
