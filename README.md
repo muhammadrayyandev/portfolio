@@ -132,11 +132,11 @@ npm start
 
 ## 📞 Contact
 
-- 📧 **Email**: your.email@example.com
-- 📱 **Phone**: +92 XXX XXXXXXX
+- 📧 **Email**: muhammadrayyandev@gmail.com
+- 📱 **Phone**: +92 329 9725841
 - 📍 **Location**: Pakistan
-- 💼 **LinkedIn**: https://www.linkedin.com/in/tayyab-khattak
-- 🐙 **GitHub**: https://github.com/tayyabktk2002
+- 💼 **LinkedIn**: https://www.linkedin.com/in/rayyan003
+- 🐙 **GitHub**: https://github.com/muhammadrayyandev
 
 ## 📄 License
 
@@ -144,4 +144,4 @@ This project is open source.
 
 ---
 
-**Built with ❤️ by [Tayyab Ur Rehman Khattak]**
+**Built with ❤️ by [Muhammad Rayyan]**
