@@ -19,17 +19,17 @@ const MediaPlatform = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="p-3 bg-gray-900 text-white rounded-full hover:bg-pink-700 transition-all duration-300 shadow-md">
-        <SiBehance  />
+        <SiBehance />
       </a>
 
-      <a
+      {/* <a
         href="https://www.instagram.com/m_rayyan_003/"
         target="_blank"
         rel="noopener noreferrer"
         className="p-3 bg-gray-900 text-white rounded-full hover:bg-pink-600 transition-all duration-300 shadow-md"
       >
         <Instagram size={24} />
-      </a>
+      </a> */}
 
     </div>
   );
