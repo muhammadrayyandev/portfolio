@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: "My Experiences", href: "#experiences" },
     { name: "Let's Connect", href: "#contact" },
   ];
-  
+
 
   return (
     <header className="w-full fixed top-0 left-0 z-50 bg-transparent">
@@ -36,9 +36,8 @@ const Navbar = () => {
       </nav>
 
       <div
-        className={`fixed inset-0 bg-white text-black flex flex-col justify-center items-center gap-6 sm:gap-8 text-base sm:text-lg font-semibold tracking-wide transition-all duration-500 ease-in-out overflow-y-auto py-20 ${
-          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
+        className={`fixed inset-0 bg-white text-black flex flex-col justify-center items-center gap-6 sm:gap-8 text-base sm:text-lg font-semibold tracking-wide transition-all duration-500 ease-in-out overflow-y-auto py-20 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
       >
         <div className="absolute top-4 right-4 sm:top-6 sm:right-8 p-1.5 sm:p-2">
           <button
@@ -70,6 +69,7 @@ const Navbar = () => {
               Email: muhammadrayyandev@gmail.com
             </a>
             <a
+              href="https://wa.me/+923299725841"
               className="block text-black font-bold hover:text-gray-600"
             >
               Whatsapp: +92 329 9725841
@@ -86,7 +86,7 @@ const Navbar = () => {
           Download Resume
         </a>
       </div>
-    </header>
+    </header >
   );
 };
 
